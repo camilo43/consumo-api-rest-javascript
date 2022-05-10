@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../api_rest_myVersion/styles.css">
+    <title>Mis perros</title>
+</head>
+<body>
+    <section id="main_container">
+        <h1>Fotos de perros</h1>
+        <h2 id="elCambio">Hizo click?</h2>
+        <span id="error"></span>
+    </section>
+    
+    <h2>Fotos aleatorias de perros</h2>
+
+    <section id="fotoPerros">
+        <img  id="fotoPerros__1" alt="Un perrito" width="200px">
+        <button id="fotoPerros_btn1">Guardar foto</button>
+    </section>
+
+    <section id="fotoPerros">
+        <img  id="fotoPerros__2" alt="Un perrito" width="200px">
+        <button id="fotoPerros_btn2">Guardar foto</button>
+    </section>
+
+    <section id="fotoPerros">
+        <img  id="fotoPerros__3" alt="Un perrito" width="200px">
+        <button id="fotoPerros_btn3">Guardar foto</button>
+    </section>
+
+    <h2>Fotos guardadas</h2>
+
+    <section id="perroFavorito">
+    </section>
+    <button id="refreshButton">Refresh</button>
+    
+    <h2>Sube foto de tu perro</h2>
+    <section id="formularioSubida">
+        <form id="formularioSubida__id" >
+            <input type="file" id="formularioSubida__input" name="fotoPerro"/>           
+            <button type="button" onclick="subirFotoPerro()">Enviar</button>
+
+        </form>
+
+    </section>
+    
+<script src="../api_rest_myVersion/script_rest.js"></script>
+</body>
+</html>
