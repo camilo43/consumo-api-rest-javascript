@@ -1,7 +1,3 @@
-const API = 'https://api.thedogapi.com/v1/images/search?limit=3&api_key=fc6cc2de-39c1-4cde-8fb5-f6aab937ea6f';
-const API_favs = 'https://api.thedogapi.com/v1/favourites?api_key=fc6cc2de-39c1-4cde-8fb5-f6aab937ea6f'
-const API_delete = (id) => `https://api.thedogapi.com/v1/favourites/${id}?api_key=fc6cc2de-39c1-4cde-8fb5-f6aab937ea6f`
-const API_upload = 'https://api.thedogapi.com/v1/images/upload'
 
 /*fetch(API)
   .then(response => response.json())
@@ -131,16 +127,16 @@ async function saveDogs(id){
 
   async function subirFotoPerro(){
     const form = document.getElementById("formularioSubida__id")
-    const formData = new FormData(form)
+    const formData = new FormData(form);
 
-    console.log("Form Data: ", formData.get('fotoPerro'))
+    console.log("Form Data: ", formData.get('file'))
     //console.log("Form: ", form)
 
     let res = await fetch(API_upload, {
       method: 'POST',
       headers: {
         // 'Content-Type': 'multipart/form-data',
-        'X-API-KEY': 'fc6cc2de-39c1-4cde-8fb5-f6aab937ea6f',
+        'X-API-KEY': '...',
       },
       body: formData,
     })
